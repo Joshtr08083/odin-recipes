@@ -1,0 +1,189 @@
+/* Themes generated via realtimecolors.com 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Prata&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --text-50: rgb(241, 243, 242);
+    --text-100: rgb(227, 232, 230);
+    --text-200: rgb(199, 209, 204);
+    --text-300: rgb(172, 185, 179);
+    --text-400: rgb(144, 162, 153);
+    --text-500: rgb(116, 139, 128);
+    --text-600: rgb(93, 111, 102);
+    --text-700: rgb(70, 83, 77);
+    --text-800: rgb(46, 56, 51);
+    --text-900: rgb(23, 28, 26);
+    --text-950: rgb(12, 14, 13);
+
+    --background-50: rgb(241, 244, 244);
+    --background-100: rgb(227, 232, 232);
+    --background-200: rgb(198, 210, 210);
+    --background-300: rgb(170, 187, 187);
+    --background-400: rgb(142, 164, 164);
+    --background-500: rgb(113, 142, 142);
+    --background-600: rgb(91, 113, 113);
+    --background-700: rgb(68, 85, 85);
+    --background-800: rgb(45, 57, 57);
+    --background-900: rgb(23, 28, 28);
+    --background-950: rgb(11, 14, 14);
+
+    --primary-50: rgb(239, 246, 243);
+    --primary-100: rgb(223, 236, 232);
+    --primary-200: rgb(191, 217, 209);
+    --primary-300: rgb(159, 198, 186);
+    --primary-400: rgb(126, 180, 163);
+    --primary-500: rgb(94, 161, 140);
+    --primary-600: rgb(75, 129, 112);
+    --primary-700: rgb(57, 96, 84);
+    --primary-800: rgb(38, 64, 56);
+    --primary-900: rgb(19, 32, 28);
+    --primary-950: rgb(9, 16, 14);
+
+    --secondary-50: rgb(238, 247, 244);
+    --secondary-100: rgb(221, 238, 233);
+    --secondary-200: rgb(186, 222, 211);
+    --secondary-300: rgb(152, 205, 188);
+    --secondary-400: rgb(117, 189, 166);
+    --secondary-500: rgb(83, 172, 144);
+    --secondary-600: rgb(66, 138, 115);
+    --secondary-700: rgb(50, 103, 86);
+    --secondary-800: rgb(33, 69, 58);
+    --secondary-900: rgb(17, 34, 29);
+    --secondary-950: rgb(8, 17, 14);
+
+    --accent-50: rgb(237, 248, 244);
+    --accent-100: rgb(218, 241, 234);
+    --accent-200: rgb(182, 226, 212);
+    --accent-300: rgb(145, 212, 191);
+    --accent-400: rgb(108, 198, 169);
+    --accent-500: rgb(71, 184, 148);
+    --accent-600: rgb(57, 147, 118);
+    --accent-700: rgb(43, 110, 89);
+    --accent-800: rgb(29, 73, 59);
+    --accent-900: rgb(14, 37, 30);
+    --accent-950: rgb(7, 18, 15);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-50: rgb(13, 14, 11);
+        --text-100: rgb(27, 28, 23);
+        --text-200: rgb(54, 57, 45);
+        --text-300: rgb(81, 85, 68);
+        --text-400: rgb(108, 113, 91);
+        --text-500: rgb(135, 142, 113);
+        --text-600: rgb(159, 164, 142);
+        --text-700: rgb(183, 187, 170);
+        --text-800: rgb(207, 210, 198);
+        --text-900: rgb(231, 232, 227);
+        --text-950: rgb(243, 244, 241);
+
+        --background-50: rgb(13, 14, 12);
+        --background-100: rgb(26, 27, 24);
+        --background-200: rgb(51, 55, 47);
+        --background-300: rgb(77, 82, 71);
+        --background-400: rgb(102, 109, 95);
+        --background-500: rgb(128, 136, 119);
+        --background-600: rgb(153, 160, 146);
+        --background-700: rgb(179, 184, 173);
+        --background-800: rgb(204, 208, 200);
+        --background-900: rgb(230, 231, 228);
+        --background-950: rgb(242, 243, 241);
+
+        --primary-50: rgb(13, 14, 11);
+        --primary-100: rgb(27, 28, 23);
+        --primary-200: rgb(53, 56, 46);
+        --primary-300: rgb(80, 84, 69);
+        --primary-400: rgb(107, 112, 92);
+        --primary-500: rgb(133, 140, 115);
+        --primary-600: rgb(158, 163, 143);
+        --primary-700: rgb(182, 186, 171);
+        --primary-800: rgb(206, 209, 199);
+        --primary-900: rgb(231, 232, 227);
+        --primary-950: rgb(243, 244, 241);
+
+        --secondary-50: rgb(11, 14, 13);
+        --secondary-100: rgb(23, 28, 26);
+        --secondary-200: rgb(46, 56, 52);
+        --secondary-300: rgb(69, 84, 78);
+        --secondary-400: rgb(92, 112, 103);
+        --secondary-500: rgb(115, 140, 129);
+        --secondary-600: rgb(143, 163, 154);
+        --secondary-700: rgb(171, 186, 180);
+        --secondary-800: rgb(199, 209, 205);
+        --secondary-900: rgb(227, 232, 230);
+        --secondary-950: rgb(241, 244, 242);
+
+        --accent-50: rgb(11, 14, 14);
+        --accent-100: rgb(23, 28, 28);
+        --accent-200: rgb(46, 56, 56);
+        --accent-300: rgb(69, 83, 84);
+        --accent-400: rgb(92, 111, 112);
+        --accent-500: rgb(115, 139, 140);
+        --accent-600: rgb(143, 162, 163);
+        --accent-700: rgb(171, 185, 186);
+        --accent-800: rgb(199, 209, 209);
+        --accent-900: rgb(227, 232, 232);
+        --accent-950: rgb(241, 243, 244);
+
+
+    }
+
+}
+
+
+
+body {
+    background-color: var(--background-100);
+    color: var(--text-900);
+    font-family: var(--header-font);
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--regular-font);
+    font-weight: 700;
+}
+  
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+a:link { color: var(--accent-500) }
+a:visited { color: var(--accent-750) }
+
+button {
+    background-color: #ffffff00;
+    border: none;
+    outline: 2px solid var(--text-900);
+    border-radius: 5px;
+    color: var(--text-900);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--primary-200);
+}
+button:focus {
+    outline: 2px solid var(--secondary-600);
+    background-color: var(--primary-200);
+}
+button:active {
+    background-color: var(--primary-400);
+}
