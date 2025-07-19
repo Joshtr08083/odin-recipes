@@ -74,65 +74,65 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-50: rgb(13, 14, 11);
-        --text-100: rgb(27, 28, 23);
-        --text-200: rgb(54, 57, 45);
-        --text-300: rgb(81, 85, 68);
-        --text-400: rgb(108, 113, 91);
-        --text-500: rgb(135, 142, 113);
-        --text-600: rgb(159, 164, 142);
-        --text-700: rgb(183, 187, 170);
-        --text-800: rgb(207, 210, 198);
-        --text-900: rgb(231, 232, 227);
-        --text-950: rgb(243, 244, 241);
-
-        --background-50: rgb(13, 14, 12);
-        --background-100: rgb(26, 27, 24);
-        --background-200: rgb(51, 55, 47);
-        --background-300: rgb(77, 82, 71);
-        --background-400: rgb(102, 109, 95);
-        --background-500: rgb(128, 136, 119);
-        --background-600: rgb(153, 160, 146);
-        --background-700: rgb(179, 184, 173);
-        --background-800: rgb(204, 208, 200);
-        --background-900: rgb(230, 231, 228);
-        --background-950: rgb(242, 243, 241);
-
-        --primary-50: rgb(13, 14, 11);
-        --primary-100: rgb(27, 28, 23);
-        --primary-200: rgb(53, 56, 46);
-        --primary-300: rgb(80, 84, 69);
-        --primary-400: rgb(107, 112, 92);
-        --primary-500: rgb(133, 140, 115);
-        --primary-600: rgb(158, 163, 143);
-        --primary-700: rgb(182, 186, 171);
-        --primary-800: rgb(206, 209, 199);
-        --primary-900: rgb(231, 232, 227);
-        --primary-950: rgb(243, 244, 241);
-
-        --secondary-50: rgb(11, 14, 13);
-        --secondary-100: rgb(23, 28, 26);
-        --secondary-200: rgb(46, 56, 52);
-        --secondary-300: rgb(69, 84, 78);
-        --secondary-400: rgb(92, 112, 103);
-        --secondary-500: rgb(115, 140, 129);
-        --secondary-600: rgb(143, 163, 154);
-        --secondary-700: rgb(171, 186, 180);
-        --secondary-800: rgb(199, 209, 205);
-        --secondary-900: rgb(227, 232, 230);
-        --secondary-950: rgb(241, 244, 242);
-
-        --accent-50: rgb(11, 14, 14);
-        --accent-100: rgb(23, 28, 28);
-        --accent-200: rgb(46, 56, 56);
-        --accent-300: rgb(69, 83, 84);
-        --accent-400: rgb(92, 111, 112);
-        --accent-500: rgb(115, 139, 140);
-        --accent-600: rgb(143, 162, 163);
-        --accent-700: rgb(171, 185, 186);
-        --accent-800: rgb(199, 209, 209);
-        --accent-900: rgb(227, 232, 232);
-        --accent-950: rgb(241, 243, 244);
+        --text-50: #0e0c0e;
+        --text-100: #1c171c;
+        --text-200: #382e38;
+        --text-300: #534653;
+        --text-400: #6f5d6f;
+        --text-500: #8b748b;
+        --text-600: #a290a2;
+        --text-700: #b9acb9;
+        --text-800: #d1c7d1;
+        --text-900: #e8e3e8;
+        --text-950: #f3f1f3;
+      
+        --background-50: #0e0c0e;
+        --background-100: #1c171c;
+        --background-200: #372f37;
+        --background-300: #534653;
+        --background-400: #6e5e6e;
+        --background-500: #8a758a;
+        --background-600: #a191a1;
+        --background-700: #b9acb9;
+        --background-800: #d0c8d0;
+        --background-900: #e8e3e8;
+        --background-950: #f3f1f3;
+      
+        --primary-50: #0e0b0e;
+        --primary-100: #1c171b;
+        --primary-200: #382e37;
+        --primary-300: #544552;
+        --primary-400: #705c6d;
+        --primary-500: #8c7388;
+        --primary-600: #a38fa0;
+        --primary-700: #baabb8;
+        --primary-800: #d1c7d0;
+        --primary-900: #e8e3e7;
+        --primary-950: #f4f1f3;
+      
+        --secondary-50: #0e0d0b;
+        --secondary-100: #1c1a17;
+        --secondary-200: #38332e;
+        --secondary-300: #544d45;
+        --secondary-400: #70665c;
+        --secondary-500: #8c8073;
+        --secondary-600: #a3998f;
+        --secondary-700: #bab3ab;
+        --secondary-800: #d1ccc7;
+        --secondary-900: #e8e6e3;
+        --secondary-950: #f4f2f1;
+      
+        --accent-50: #0e0e0b;
+        --accent-100: #1c1c17;
+        --accent-200: #38382e;
+        --accent-300: #545445;
+        --accent-400: #70705c;
+        --accent-500: #8c8c73;
+        --accent-600: #a3a38f;
+        --accent-700: #babaab;
+        --accent-800: #d1d1c7;
+        --accent-900: #e8e8e3;
+        --accent-950: #f4f4f1;
 
 
     }
@@ -174,7 +174,7 @@ a:visited { color: var(--accent-500) }
 button {
     background-color: #ffffff00;
     border: none;
-    outline: 2px solid var(--text-900);
+    outline: 2px solid var(--text-300);
     border-radius: 5px;
     color: var(--text-900);
     padding: 10px 20px;
@@ -184,7 +184,7 @@ button:hover {
     background-color: var(--primary-200);
 }
 button:focus {
-    outline: 2px solid var(--secondary-600);
+    outline: 2px solid var(--secondary-300);
     background-color: var(--primary-200);
 }
 button:active {
