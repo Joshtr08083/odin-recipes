@@ -2,11 +2,14 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Prata&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 :root {
+    --header-font: "IBM Plex Mono";
+    --regular-font: "Prata";
     
     --text-50: rgb(241, 243, 242);
     --text-100: rgb(227, 232, 230);
@@ -166,7 +169,7 @@ h5 {font-size: 1.333rem; /* 21.28px */}
 small {font-size: 0.750rem; /* 12px */}
 
 a:link { color: var(--accent-500) }
-a:visited { color: var(--accent-750) }
+a:visited { color: var(--accent-500) }
 
 button {
     background-color: #ffffff00;
