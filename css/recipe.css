@@ -50,6 +50,7 @@ ul, h5, p, ol {
     height: 25vh;
 }
 .imageDiv > h1 {
+    z-index: 5;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -66,7 +67,6 @@ ul, h5, p, ol {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    
     
 }
 
