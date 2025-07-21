@@ -15,6 +15,7 @@
 
     <title>Recipes</title>
     <link rel="stylesheet" href="./css/theme.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <style>
         h1 {
@@ -40,24 +41,24 @@
         #lazySusanDiv {
             position: relative;
             width: 50%;
-            margin: auto;
-            margin-top: 7vw;
+            margin: 5vw auto 0 auto;
+            
         }
 
 
         #lazySusan {
-            height: 45vw;
+            height: 29vw;
             margin: 50px 0 0;
             list-style: none;
             position: relative;
-
             
+
             li {
                 position: absolute;
                 left: 50%;
                 top: 0;
                 width: 30%;
-                height: 50%;
+                height: 80%;
                 padding: 0;
                 transition: 
                     transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
@@ -66,6 +67,7 @@
                 z-index: 1;
 
                 h5, button{
+                    margin: -15px 0 0 0;
                     transition: 
                         filter 0.5s,
                         transform 0.5s;
@@ -73,8 +75,9 @@
                     filter: opacity(0%);
                     transform: translateY(50%);
                 }
-
+                
                 &#item1 {
+                    
                     z-index: 2;
                     transform: translateX(-50%) scale(1) translate3d(0, 0, 0);
                     
@@ -117,6 +120,7 @@
                 }
 
                 &:after {
+                    
                     content: '';
                     position: absolute;
                     top: 50%;
@@ -135,6 +139,7 @@
                 img {
                     background-color: var(--primary-200);
                     cursor: pointer;
+                    user-select: none;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -148,9 +153,6 @@
                     transition: transform .075s ease-out;
                 }
 
-                h5 {
-                    margin: -15px 0 0 0;
-                }
             }
         }
 
@@ -171,28 +173,28 @@
     <div id="lazySusanDiv">
         <ul id="lazySusan">
             <li id="item1">
-                <a onclick="select(this)"><img src="./images/emanuel-ekstrom-1C_RSVhy32Y-unsplash.jpg"></a>
+                <a onclick="select(this)"><img alt="picture of kimchi fried rice with egg on top" draggable="false" src="./images/emanuel-ekstrom-1C_RSVhy32Y-unsplash.jpg"></a>
                 <h5>Kimchi Fried Rice</h5>
                 <a href="./recipes/kimchi-fried-rice.html"><button>View</button></a>
 
             </li>
             <li id="item2">
-                <a onclick="select(this)"><img src="./images/jon-tyson-kctt4tL1dkE-unsplash.jpg"></a>
+                <a onclick="select(this)"><img alt="picture of grilled ribs with bbq" draggable="false" src="./images/jon-tyson-kctt4tL1dkE-unsplash.jpg"></a>
                 <h5>Simple BBQ Ribs</h5>
                 <a href="./recipes/simple-bbq-ribs.html"><button>View</button></a>
             </li>
             <li id="item3">
-                <a onclick="select(this)"><img src="./images/montatip-lilitsanong-4NQrFtFBIaI-unsplash.jpg"></a>
+                <a onclick="select(this)"><img alt="picture of plain generic french toast" draggable="false" src="./images/montatip-lilitsanong-4NQrFtFBIaI-unsplash.jpg"></a>
                 <h5>Fluffy French Toast</h5>
                 <a href="./recipes/fluffy-french-toast.html"><button>View</button></a>
             </li>
             <li id="item4">
-                <a onclick="select(this)"><img src="./images/jakub-dziubak-L7POzOAoaQY-unsplash.jpg"></a>
+                <a onclick="select(this)"><img alt="picture of ramen noodles" draggable="false" src="./images/jakub-dziubak-L7POzOAoaQY-unsplash.jpg"></a>
                 <h5>Ramen Scrambled Eggs</h5>
                 <a href="./recipes/ramen-scrambled-eggs.html"><button>View</button></a>
             </li>
             <li id="item5">
-                <a onclick="select(this)"><img src="./images/ji-jiali-nPfEuj6w2qI-unsplash.jpg"></a>
+                <a onclick="select(this)"><img alt="picture of raw chinese pork dumplings" draggable="false" src="./images/ji-jiali-nPfEuj6w2qI-unsplash.jpg"></a>
                 <h5>Chinese Pork Dumplings</h5>
                 <a href="./recipes/chinese-pork-dumplings.html"><button>View</button></a>
             </li>
@@ -294,11 +296,11 @@
 
             if (id >= middleValue) {
                 for (let i = 0; i < totalItems + 1 - id; i++) {
-                    setTimeout(moveRight, 400*i);
+                    setTimeout(moveRight, 350*i);
                 }
             } else {
                 for (let i = 0; i < id - 1; i++) {
-                    setTimeout(moveLeft, 400*i);
+                    setTimeout(moveLeft, 350*i);
                 }
             }
 
