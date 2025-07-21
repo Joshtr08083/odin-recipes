@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>404 Not Found</title>
+    <link rel="stylesheet" href="./css/theme.css">
+    <style>
+        h1 {
+            margin: 80px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .textDiv {
+            position: absolute;
+            width: 99%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>
+        Unknown Page
+    </h1>
+    <div class="textDiv">
+        <p>That's not a valid page :( or i messed up idk.</p>
+        <a href="./index.html"><button> Return Home</button></a>
+        <button onclick="randomRecipe()"> Just take me to a random recipe</button>
+    </div>
+
+    <script>
+        function randomRecipe() {
+            const recipe = Math.floor(Math.random() * 4 + 1);
+            switch (recipe) {
+                case 1:
+                    document.location = "./recipes/kimchi-fried-rice.html";
+                    break;
+                case 2:
+                    document.location = "./recipes/fluffy-french-toast.html";
+                    break;
+                case 3:
+                    document.location = "./recipes/chinese-pork-dumplings.html";
+                    break;
+                case 4:
+                    document.location = "./recipes/ramen-scrambled-eggs.html";
+                    break;
+                default:
+                    document.location = "./recipes/simple-bbq-ribs.html"
+            }
+        }
+    </script>
 </body>
 </html>
