@@ -1,10 +1,3 @@
-<!-- 
-
- To Do:
-    - Mobile support
-    - lazy susan wheel button controls
-
--->
     
 <!DOCTYPE html>
 
@@ -15,6 +8,7 @@
 
     <title>Recipes</title>
     <link rel="stylesheet" href="./css/theme.css">
+    <!-- im no artist dont judge my favicon too harshly -->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <style>
@@ -26,17 +20,6 @@
         p, li {
             text-align: center;
         }
-/* 
-        #linkList {
-            font-size: 0.8rem;
-            list-style-position: inside;
-            line-height: 2rem;
-        }
-        #linkListText {
-            line-height: 2rem;
-            font-size: 0.8rem;
-        } */
-
 
         #lazySusanDiv {
             position: relative;
@@ -156,10 +139,55 @@
             }
         }
 
+        .arrowButtons {
+            user-select: none;
+            font-size: 3rem;
+            align-items: center;
+            flex-direction: row;
+            display: flex;
+            margin-top: -3vw;
+
+            a {
+                margin: auto;
+                cursor: pointer
+            }
+            
+        }
+        
+        .mobileDesign {
+            position: absolute;
+            top: 0;
+            width: 99%;
+            height: 99%;
+            margin: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            
+            ul {
+                
+                list-style: none;
+            }
+            li {
+                margin: 5vw;
+            }
+            button {
+                
+                font-size: 4rem;
+                padding: 3vw 8vw;
+            }
+        }
         
         
-        
-        
+        @media (max-width: 1000px) {
+            .desktopDesign {
+                display: none;
+            }
+            .mobileDesign {
+                display: flex;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -168,47 +196,68 @@
         Recipes
     </h1>
 
+    <div class="desktopDesign">
 
-    <!-- Lazy susan design "heavily inspired" by Michael Hiley (https://codepen.io/mhiley/pen/WzVvKd)-->
-    <div id="lazySusanDiv">
-        <ul id="lazySusan">
-            <li id="item1">
-                <a onclick="select(this)"><img alt="picture of kimchi fried rice with egg on top" draggable="false" src="./images/emanuel-ekstrom-1C_RSVhy32Y-unsplash.jpg"></a>
-                <h5>Kimchi Fried Rice</h5>
-                <a href="./recipes/kimchi-fried-rice.html"><button>View</button></a>
 
+        <!-- Lazy susan design "heavily inspired" by Michael Hiley (https://codepen.io/mhiley/pen/WzVvKd)-->
+        <div id="lazySusanDiv">
+            <ul id="lazySusan">
+                <li id="item1">
+                    <a onclick="select(this)"><img alt="picture of kimchi fried rice with egg on top" draggable="false" src="./images/emanuel-ekstrom-1C_RSVhy32Y-unsplash.jpg"></a>
+                    <h5>Kimchi Fried Rice</h5>
+                    <a href="./recipes/kimchi-fried-rice.html"><button>View</button></a>
+
+                </li>
+                <li id="item2">
+                    <a onclick="select(this)"><img alt="picture of grilled ribs with bbq" draggable="false" src="./images/jon-tyson-kctt4tL1dkE-unsplash.jpg"></a>
+                    <h5>Simple BBQ Ribs</h5>
+                    <a href="./recipes/simple-bbq-ribs.html"><button>View</button></a>
+                </li>
+                <li id="item3">
+                    <a onclick="select(this)"><img alt="picture of plain generic french toast" draggable="false" src="./images/montatip-lilitsanong-4NQrFtFBIaI-unsplash.jpg"></a>
+                    <h5>Fluffy French Toast</h5>
+                    <a href="./recipes/fluffy-french-toast.html"><button>View</button></a>
+                </li>
+                <li id="item4">
+                    <a onclick="select(this)"><img alt="picture of ramen noodles" draggable="false" src="./images/jakub-dziubak-L7POzOAoaQY-unsplash.jpg"></a>
+                    <h5>Ramen Scrambled Eggs</h5>
+                    <a href="./recipes/ramen-scrambled-eggs.html"><button>View</button></a>
+                </li>
+                <li id="item5">
+                    <a onclick="select(this)"><img alt="picture of raw chinese pork dumplings" draggable="false" src="./images/ji-jiali-nPfEuj6w2qI-unsplash.jpg"></a>
+                    <h5>Chinese Pork Dumplings</h5>
+                    <a href="./recipes/chinese-pork-dumplings.html"><button>View</button></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="arrowButtons">
+            <a onclick="moveLeft()"><</a>
+            <a onclick="moveRight()">></a>
+        </div>
+
+    </div>
+
+    <!-- Basic button layout since the lazy susan doesnt work on small screens -->
+    <div class="mobileDesign">
+        <ul>
+            <li>
+                <a href="./recipes/kimchi-fried-rice.html"><button>Kimchi Fried Rice</button></a>
             </li>
-            <li id="item2">
-                <a onclick="select(this)"><img alt="picture of grilled ribs with bbq" draggable="false" src="./images/jon-tyson-kctt4tL1dkE-unsplash.jpg"></a>
-                <h5>Simple BBQ Ribs</h5>
-                <a href="./recipes/simple-bbq-ribs.html"><button>View</button></a>
+            <li>
+                <a href="./recipes/fluffy-french-toast.html"><button>Fluffy French Toast</button></a>
             </li>
-            <li id="item3">
-                <a onclick="select(this)"><img alt="picture of plain generic french toast" draggable="false" src="./images/montatip-lilitsanong-4NQrFtFBIaI-unsplash.jpg"></a>
-                <h5>Fluffy French Toast</h5>
-                <a href="./recipes/fluffy-french-toast.html"><button>View</button></a>
+            <li>
+                <a href="./recipes/simple-bbq-ribs.html"><button>Simple BBQ Ribs</button></a>
             </li>
-            <li id="item4">
-                <a onclick="select(this)"><img alt="picture of ramen noodles" draggable="false" src="./images/jakub-dziubak-L7POzOAoaQY-unsplash.jpg"></a>
-                <h5>Ramen Scrambled Eggs</h5>
-                <a href="./recipes/ramen-scrambled-eggs.html"><button>View</button></a>
+            <li>
+                <a href="./recipes/chinese-pork-dumplings.html"><button>Chinese Pork Dumplings</button></a>
             </li>
-            <li id="item5">
-                <a onclick="select(this)"><img alt="picture of raw chinese pork dumplings" draggable="false" src="./images/ji-jiali-nPfEuj6w2qI-unsplash.jpg"></a>
-                <h5>Chinese Pork Dumplings</h5>
-                <a href="./recipes/chinese-pork-dumplings.html"><button>View</button></a>
+            <li>
+                <a href="./recipes/ramen-scrambled-eggs.html"><button>Ramen Scrambeled Eggs</button></a>
             </li>
         </ul>
     </div>
-
-    <!-- <p id="linkListText">The "Just Give Me A Damn Link To Click On" list: </p>
-    <ol id="linkList">
-        <li><a href="./recipes/kimchi-fried-rice.html">Kimchi Fried Rice</a></li>
-        <li><a href="./recipes/fluffy-french-toast.html">Fluffy French Toast</a></li>
-        <li><a href="./recipes/simple-bbq-ribs.html">Simple BBQ Ribs</a></li>
-        <li><a href="./recipes/chinese-pork-dumplings.html">Chinese Pork Dumplings</a></li>
-        <li><a href="./recipes/ramen-scrambled-eggs.html">Ramen Scrambled Eggs</a></li>
-    </ol> -->
 
     <script>
         
