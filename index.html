@@ -240,8 +240,8 @@
         </div>
 
         <div class="arrowButtons">
-            <a onclick="moveLeft()"><</a>
-            <a onclick="moveRight()">></a>
+            <a onclick="moveRight()"><</a>
+            <a onclick="moveLeft()">></a>
         </div>
 
     </div>
@@ -334,9 +334,9 @@
                 lastPressTime = Date.now();
 
                 if (event.code === "ArrowRight") {
-                    moveRight();
-                } else if (event.code === "ArrowLeft") {
                     moveLeft();
+                } else if (event.code === "ArrowLeft") {
+                    moveRight();
                 } else if (event.code === "Enter") {
                     document.getElementById("item1").classList.add("flipAnimation");
                 }
